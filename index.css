@@ -1,0 +1,120 @@
+*{
+    padding:0;
+    margin:0;
+}
+.background{
+    position: relative;
+    height:560px;
+    width:100%;
+    background-image: url(./img/background.jpg);
+    background-size: 100% 100%;
+    overflow: hidden;
+    z-index: -2;
+}
+.car{
+    top:62%;
+    /* border: 1px solid red; */
+    left:100%;
+    position: absolute;
+    animation:run 5s infinite linear;
+}
+.carbody>img{
+height:250px;
+width:260px;
+}
+.tyre{
+    left: 18%;
+    top: 130px;
+    position: absolute;
+    animation:rotate 1s infinite linear;
+}
+.tyre>img{
+    width: 50px;
+    height:50px;
+    /* border-radius: 100px; */
+}
+.tyre2{
+ 
+    left: 65%;
+    top: 130px;
+}
+@keyframes run{
+    100%{
+        left:-30%;
+    }
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.car2{
+top:67%;
+left:100%;
+animation:risk 6s infinite linear;
+}
+.car2>img{
+    height:250px;
+    width:260px;
+    }
+    .car2 .tyre{
+        animation:rand 1.8s infinite linear;
+        left: 18%;
+        top:125px;  
+    }
+    .car2 .tyre2{
+        left: 65%;
+        top: 125px;
+    }
+    @keyframes risk{
+        100%{
+    left:-30%;    }
+    }
+    
+    @keyframes rand{
+        100%{
+            transform: rotate(-360deg);
+        }
+    }
+
+
+    .car3{position: absolute;
+        top:70%;
+        left:100%;
+        width:220px;
+        height:120px;
+        animation:risk 8s infinite linear;
+        z-index: -1;
+        }
+        .car3 .carbody>img{
+height:100%;
+width:100%;
+            position: absolute;
+       
+            }
+            .car3 .tyre{
+                animation:rand 2.5s infinite linear;
+                left: 0%;
+                top:59px;
+            }
+            .car3 .tyre2{
+                left: 72%;
+                top: 59px;
+            }
+            @keyframes risk{
+                100%{
+            left:-30%;    }
+            }
+            
+            @keyframes rand{
+                100%{
+                    transform: rotate(-360deg);
+                }
+            }
+
+
+
+
+
+
+
